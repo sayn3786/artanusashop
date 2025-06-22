@@ -100,7 +100,7 @@ export default function App() {
             <p className="mt-2 text-sm text-gray-600">Shipping: {toCurrency(shipping, country)}</p>
             <p className="text-md font-bold">Total: {toCurrency(grandTotal, country)}</p>
             <button onClick={clearCart} className="text-xs text-red-500 underline mt-2">Clear Cart</button>
-            <a href={`https://wa.me/6582398821?text=${encodeURIComponent(`Order from ${country}\nTotal: ${toCurrency(grandTotal, country)}\nItems: ${Object.entries(items).map(([id, qty]) => { const p = PRODUCTS.flatMap(p => p.variants).find(v => v.id === id); return `${p?.name} x${qty}` }).join(", ")}`)}`} target="_blank" rel="noopener noreferrer" className="mt-3 block bg-green-600 text-white text-center px-4 py-2 rounded">Checkout via WhatsApp</a>
+            <a href={`https://wa.me/6582938821?text=${encodeURIComponent(`Order from ${country}\nTotal: ${toCurrency(grandTotal, country)}\nItems: ${Object.entries(items).map(([id, qty]) => { const p = PRODUCTS.flatMap(p => p.variants).find(v => v.id === id); return `${p?.name} x${qty}` }).join(", ")}`)}`} target="_blank" rel="noopener noreferrer" className="mt-3 block bg-green-600 text-white text-center px-4 py-2 rounded">Checkout via WhatsApp</a>
           </div>
         )}
       </div>
@@ -112,7 +112,7 @@ export default function App() {
         transition={{ duration: 1 }}
         className="text-center py-8 px-6 bg-pink-100 rounded-lg shadow-md mb-6 relative"
       >
-        <img src="/images/brand.jpg" alt="Arta Nusa Logo" className="absolute top-6 left-6 w-28 h-28 rounded-full object-contain shadow-md" />
+        <img src="/images/brand.jpg" alt="Arta Nusa Logo" className="absolute top-12 left-12 w-56 h-56 rounded-full object-contain shadow-md" />
         <h2 className="text-2xl font-bold text-amber-800 mb-2">Welcome to Arta Nusa</h2>
         <p className="text-gray-700 text-md max-w-2xl mx-auto leading-relaxed">
           🌸 Arta Nusa celebrates the soulful craftsmanship of Indonesia. From handwoven rattan mirrors to traditional herbal teas,
