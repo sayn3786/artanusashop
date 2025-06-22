@@ -112,7 +112,7 @@ export default function App() {
         transition={{ duration: 1 }}
         className="text-center py-8 px-6 bg-pink-100 rounded-lg shadow-md mb-6 relative"
       >
-        <img src="/images/brand.jpg" alt="Arta Nusa Logo" className="absolute top-8 left-8 w-30 h-30 rounded-full object-contain shadow-md" />
+        <img src="/images/brand.jpg" alt="Arta Nusa Logo" className="absolute top-0.5 left-0.5 w-56 h-56 rounded-full object-contain shadow-md" />
         <h2 className="text-2xl font-bold text-amber-800 mb-2">Welcome to Arta Nusa</h2>
         <p className="text-gray-700 text-md max-w-2xl mx-auto leading-relaxed">
           🌸 Arta Nusa celebrates the soulful craftsmanship of Indonesia. From handwoven rattan mirrors to traditional herbal teas,
