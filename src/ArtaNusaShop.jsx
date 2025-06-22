@@ -100,7 +100,7 @@ export default function App() {
             <p className="mt-2 text-sm text-gray-600">Shipping: {toCurrency(shipping, country)}</p>
             <p className="text-md font-bold">Total: {toCurrency(grandTotal, country)}</p>
             <button onClick={clearCart} className="text-xs text-red-500 underline mt-2">Clear Cart</button>
-            <a href={`https://wa.me/6581262876?text=${encodeURIComponent(`Order from ${country}\nTotal: ${toCurrency(grandTotal, country)}\nItems: ${Object.entries(items).map(([id, qty]) => { const p = PRODUCTS.flatMap(p => p.variants).find(v => v.id === id); return `${p?.name} x${qty}` }).join(", ")}`)}`} target="_blank" rel="noopener noreferrer" className="mt-3 block bg-green-600 text-white text-center px-4 py-2 rounded">Checkout via WhatsApp</a>
+            <a href={`https://wa.me/6582398821?text=${encodeURIComponent(`Order from ${country}\nTotal: ${toCurrency(grandTotal, country)}\nItems: ${Object.entries(items).map(([id, qty]) => { const p = PRODUCTS.flatMap(p => p.variants).find(v => v.id === id); return `${p?.name} x${qty}` }).join(", ")}`)}`} target="_blank" rel="noopener noreferrer" className="mt-3 block bg-green-600 text-white text-center px-4 py-2 rounded">Checkout via WhatsApp</a>
           </div>
         )}
       </div>
