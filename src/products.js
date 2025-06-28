@@ -7,7 +7,7 @@ export const PRODUCTS = [
       {
         id: "mirror_full_rattan",
         name: "Full Rattan Mirror",
-        price: 300000,
+        price: 450000,
         img: "/images/mirror/mirror_decoration_full_rattan.jpg",
         description: "Elegant round mirror with full rattan looped design.",
         benefits: ["Natural handmade loops", "Adds boho elegance", "Warm light reflection"]
@@ -15,7 +15,7 @@ export const PRODUCTS = [
       {
         id: "rattan_mirror",
         name: "Rattan Sun Mirror",
-        price: 320000,
+        price: 420000,
         img: "/images/mirror/rattan_decoration_mirror.jpg",
         description: "Mirror with sun-inspired rattan rays.",
         benefits: ["Sunburst design", "Traditional craftsmanship", "Decorative centerpiece"]
@@ -23,7 +23,7 @@ export const PRODUCTS = [
       {
         id: "sintetis_mirror",
         name: "Black Rattan Mirror",
-        price: 350000,
+        price: 450000,
         img: "/images/mirror/rattan_decoration_sintetis.jpg",
         description: "Synthetic black rattan frame mirror with intricate detailing.",
         benefits: ["Elegant contrast", "Sturdy material", "Modern ethnic look"]
@@ -54,7 +54,7 @@ export const PRODUCTS = [
       {
         id: "lamp_bowl",
         name: "Hanging Bowl Rattan Lampshade",
-        price: 260000,
+        price: 550000,
         img: "/images/lamp/hanging_bowl_rattan_lampshade.jpg",
         description: "Elegant bowl design to suit any cozy space.",
         benefits: ["Traditional form", "Soothing tones", "Rustic charm"]
@@ -62,7 +62,7 @@ export const PRODUCTS = [
       {
         id: "lamp_large",
         name: "Large Hanging Rattan Lampshade",
-        price: 350000,
+        price: 550000,
         img: "/images/lamp/large_hanging_rattan_lampshade.jpg",
         description: "Large statement lamp with natural rattan weave.",
         benefits: ["Eye-catching design", "Ideal for dining or halls", "Ethnic highlight"]
@@ -70,7 +70,7 @@ export const PRODUCTS = [
       {
         id: "lamp_donut",
         name: "Original Donut Rattan Lampshade",
-        price: 300000,
+        price: 550000,
         img: "/images/lamp/original_donut_rattan_decoration_lampshade.jpg",
         description: "Unique donut shape crafted with precision.",
         benefits: ["Artisan finish", "Contemporary ethnic mix", "Soft lighting"]
@@ -78,7 +78,7 @@ export const PRODUCTS = [
       {
         id: "lamp_trio",
         name: "Rattan Hanging Trio Decoration",
-        price: 420000,
+        price: 600000,
         img: "/images/lamp/rattan_hanging_lampshade_decoration.jpg",
         description: "Triple rattan lamp set for maximum elegance.",
         benefits: ["Matching set", "Statement decor", "Warm feel"]
@@ -86,7 +86,7 @@ export const PRODUCTS = [
       {
         id: "lamp_room",
         name: "Room Decoration Rattan Lamp",
-        price: 310000,
+        price: 450000,
         img: "/images/lamp/rattan_room_decoration_lampshade.jpg",
         description: "Charming lamp for cozy interiors.",
         benefits: ["Handwoven", "Long-lasting", "Cultural vibe"]
@@ -94,7 +94,7 @@ export const PRODUCTS = [
       {
         id: "lamp_small",
         name: "Small Room Rattan Lampshade",
-        price: 220000,
+        price: 300000,
         img: "/images/lamp/small_rattan_room_decoration_lampshade.jpg",
         description: "Compact lamp ideal for bedside or hallway.",
         benefits: ["Compact form", "Warm tones", "Crafted simplicity"]
@@ -106,15 +106,15 @@ export const PRODUCTS = [
     name: "Pot Cover Basket Set",
     category: "Home Décor & Art",
     variants: [
-      { id: "pot_g_n_w", name: "Green + White", price: 120000, img: "/images/pot/pot_cover_set_3_g_n_w.jpg", description: "Green base with white tops.", benefits: ["Natural jute blend", "Decorative touch", "Eco-friendly"] },
-      { id: "pot_m_n_w", name: "Monochrome + White", price: 120000, img: "/images/pot/pot_cover_set_3_m_n_w.jpg", description: "Modern monochrome mix.", benefits: ["Sleek design", "Fits any home", "Set of 3"] },
-      { id: "pot_n_p_n", name: "Neutral + Plain", price: 120000, img: "/images/pot/pot_cover_set_3_n_p_n.jpg", description: "Plain brown shades.", benefits: ["Natural fiber", "Subtle decor", "Crafted design"] },
-      { id: "pot_o_n_w", name: "Orange + White", price: 120000, img: "/images/pot/pot_cover_set_3_o_n_w.jpg", description: "Vibrant orange contrast.", benefits: ["Festive tone", "Hand braided", "Rustic feel"] },
-      { id: "pot_p_n_w", name: "Pink + White", price: 120000, img: "/images/pot/pot_cover_set_3_p_n_w.jpg", description: "Soft pink accents.", benefits: ["Cheerful finish", "Brighten up rooms", "Woven jute"] },
-      { id: "pot_s_n_w", name: "Soft Natural White", price: 120000, img: "/images/pot/pot_cover_set_3_s_n_w.jpg", description: "Light natural tones.", benefits: ["Neutral decor", "Soothing colors", "Clean finish"] },
-      { id: "pot_w_n_w", name: "White Natural Combo", price: 120000, img: "/images/pot/pot_cover_set_3_w_n_w.jpg", description: "Balanced white and tan.", benefits: ["Classic look", "Fits modern homes", "Eco material"] },
-      { id: "pot_y_n_w", name: "Yellow + White", price: 120000, img: "/images/pot/pot_cover_set_3_y_n_w.jpg", description: "Bright yellow base mix.", benefits: ["Colorful blend", "Joyful atmosphere", "Handcrafted"] },
-      { id: "pot_set", name: "Full Pot Basket Set", price: 250000, img: "/images/pot/pot_cover_set.jpg", description: "Full display of pot basket set.", benefits: ["Complete set", "Shelf ready", "Ethnic utility"] }
+      { id: "pot_g_n_w", name: "Green + White", price: 200000, img: "/images/pot/pot_cover_set_3_g_n_w.jpg", description: "Green base with white tops.", benefits: ["Natural jute blend", "Decorative touch", "Eco-friendly"] },
+      { id: "pot_m_n_w", name: "Monochrome + White", price: 200000, img: "/images/pot/pot_cover_set_3_m_n_w.jpg", description: "Modern monochrome mix.", benefits: ["Sleek design", "Fits any home", "Set of 3"] },
+      { id: "pot_n_p_n", name: "Neutral + Plain", price: 200000, img: "/images/pot/pot_cover_set_3_n_p_n.jpg", description: "Plain brown shades.", benefits: ["Natural fiber", "Subtle decor", "Crafted design"] },
+      { id: "pot_o_n_w", name: "Orange + White", price: 200000, img: "/images/pot/pot_cover_set_3_o_n_w.jpg", description: "Vibrant orange contrast.", benefits: ["Festive tone", "Hand braided", "Rustic feel"] },
+      { id: "pot_p_n_w", name: "Pink + White", price: 200000, img: "/images/pot/pot_cover_set_3_p_n_w.jpg", description: "Soft pink accents.", benefits: ["Cheerful finish", "Brighten up rooms", "Woven jute"] },
+      { id: "pot_s_n_w", name: "Soft Natural White", price: 200000, img: "/images/pot/pot_cover_set_3_s_n_w.jpg", description: "Light natural tones.", benefits: ["Neutral decor", "Soothing colors", "Clean finish"] },
+      { id: "pot_w_n_w", name: "White Natural Combo", price: 200000, img: "/images/pot/pot_cover_set_3_w_n_w.jpg", description: "Balanced white and tan.", benefits: ["Classic look", "Fits modern homes", "Eco material"] },
+      { id: "pot_y_n_w", name: "Yellow + White", price: 200000, img: "/images/pot/pot_cover_set_3_y_n_w.jpg", description: "Bright yellow base mix.", benefits: ["Colorful blend", "Joyful atmosphere", "Handcrafted"] },
+      { id: "pot_set", name: "Full Pot Basket Set", price: 200000, img: "/images/pot/pot_cover_set.jpg", description: "Full display of pot basket set.", benefits: ["Complete set", "Shelf ready", "Ethnic utility"] }
     ]
   },
 {
@@ -125,7 +125,7 @@ export const PRODUCTS = [
     {
       id: "vase_rattan_color",
       name: "Color Rattan Vases",
-      price: 160000,
+      price: 250000,
       img: "/images/vase/rattan_color_vase.jpg",
       description: "Vibrant rattan vases in assorted traditional hues.",
       benefits: ["Bright tones", "Ethnic charm", "Decorative highlight"]
@@ -133,7 +133,7 @@ export const PRODUCTS = [
     {
       id: "vase_seagrass",
       name: "Sea Grass Vases",
-      price: 150000,
+      price: 200000,
       img: "/images/vase/sea_grass_vase.jpg",
       description: "Natural sea grass vases in soft earthy finishes.",
       benefits: ["Eco material", "Neutral palette", "Versatile styling"]
@@ -141,7 +141,7 @@ export const PRODUCTS = [
     {
       id: "vase_small_rattan",
       name: "Mini Rattan Vases",
-      price: 140000,
+      price: 150000,
       img: "/images/vase/small_rattan_vase.jpg",
       description: "Set of small-sized rattan vases for accent spaces.",
       benefits: ["Minimalist decor", "Crafted texture", "Great for shelves"]
@@ -164,7 +164,7 @@ export const PRODUCTS = [
       {
         id: "batik_ceplok",
         name: "Motif Ceplok",
-        price: 80000,
+        price: 350000,
         img: "/images/batik/batik_cusion_cover_set_motif_ceplok.jpg",
         description: "Iconic Ceplok pattern in neutral tones.",
         benefits: ["Cultural legacy", "Handmade charm", "Ethnic accent"]
@@ -172,7 +172,7 @@ export const PRODUCTS = [
       {
         id: "batik_kawung",
         name: "Motif Kawung",
-        price: 80000,
+        price: 350000,
         img: "/images/batik/batik_cusion_cover_set_motif_kawung.jpg",
         description: "Classic Kawung circles in earthy shade.",
         benefits: ["Heritage design", "Ethnic class", "Soft textile"]
@@ -180,7 +180,7 @@ export const PRODUCTS = [
       {
         id: "batik_parang",
         name: "Motif Parang",
-        price: 80000,
+        price: 350000,
         img: "/images/batik/batik_cusion_cover_set_motif_parang.jpg",
         description: "Powerful Parang motif in bold lines.",
         benefits: ["Symbolic strength", "Cultural legacy", "Fine stitch"]
@@ -194,20 +194,20 @@ export const PRODUCTS = [
     name: "Dried Flower Collection",
     category: "Home Décor & Art",
     variants: [
-      { id: "baby_bread", name: "Baby Bread", price: 30000, img: "/images/dryflower/dr_f_baby_bread.jpg", description: "Soft baby-breath-style flowers.", benefits: ["Romantic tone", "Elegant filler", "Lasts long"] },
+      { id: "baby_bread", name: "Baby Bread", price: 60000, img: "/images/dryflower/dr_f_baby_bread.jpg", description: "Soft baby-breath-style flowers.", benefits: ["Romantic tone", "Elegant filler", "Lasts long"] },
       { id: "bunga_jawan", name: "Bunga Jawan", price: 30000, img: "/images/dryflower/dr_f_bunga_jawan.jpg", description: "Colorful bundled dry flower.", benefits: ["Bright", "Handtied", "Ready to use"] },
-      { id: "bunga_kentulan", name: "Bunga Kentulan", price: 30000, img: "/images/dryflower/dr_f_bunga_kentulan.jpg", description: "Fluffy Kentulan flowers.", benefits: ["Rich texture", "Soft touch", "Vibrant"] },
+      { id: "bunga_kentulan", name: "Bunga Kentulan", price: 50000, img: "/images/dryflower/dr_f_bunga_kentulan.jpg", description: "Fluffy Kentulan flowers.", benefits: ["Rich texture", "Soft touch", "Vibrant"] },
       { id: "bunga_padi", name: "Bunga Padi", price: 30000, img: "/images/dryflower/dr_f_bunga_padi.jpg", description: "Padi-style traditional decor.", benefits: ["Cultural", "Neutral shade", "Unique"] },
       { id: "rumput_teki", name: "Rumput Teki", price: 30000, img: "/images/dryflower/dr_f_rumput_teki.jpg", description: "Grass-style dried bouquet.", benefits: ["Minimalist", "Floral grass", "Natural"] },
-      { id: "rustic", name: "Rustic Grass", price: 30000, img: "/images/dryflower/dr_f_rustic.jpg", description: "Rustic tall-stem bouquet.", benefits: ["Tall decor", "Rustic charm", "Boho"] },
-      { id: "springkel", name: "Springkel", price: 30000, img: "/images/dryflower/dr_f_springkel.jpg", description: "Feathery texture bunch.", benefits: ["Lightweight", "Shabby chic", "Neutral"] },
-      { id: "tapak_liman", name: "Tapak Liman", price: 30000, img: "/images/dryflower/dr_f_tapak_liman.jpg", description: "Blended bouquet with contrast.", benefits: ["Bicolor", "Unique leaves", "Modern"] },
+      { id: "rustic", name: "Rustic Grass", price: 55000, img: "/images/dryflower/dr_f_rustic.jpg", description: "Rustic tall-stem bouquet.", benefits: ["Tall decor", "Rustic charm", "Boho"] },
+      { id: "springkel", name: "Springkel", price: 40000, img: "/images/dryflower/dr_f_springkel.jpg", description: "Feathery texture bunch.", benefits: ["Lightweight", "Shabby chic", "Neutral"] },
+      { id: "tapak_liman", name: "Tapak Liman", price: 35000, img: "/images/dryflower/dr_f_tapak_liman.jpg", description: "Blended bouquet with contrast.", benefits: ["Bicolor", "Unique leaves", "Modern"] },
       { id: "rayung_mini", name: "Rayung Mini", price: 30000, img: "/images/dryflower/dry_floer_rayung_mini.jpg", description: "Mini rayung palm bunch.", benefits: ["Compact", "Color options", "Natural"] },
-      { id: "adas_wangi", name: "Adas Wangi", price: 30000, img: "/images/dryflower/dry_flower_adas_wangi.jpg", description: "Spiced fennel-like bouquet.", benefits: ["Scented", "Ethnic", "Boho"] },
-      { id: "alang_alang", name: "Alang-Alang", price: 30000, img: "/images/dryflower/dry_flower_alang_alang.jpg", description: "Tall grass inspired bunch.", benefits: ["Bold", "Statement", "Natural"] },
-      { id: "medusa", name: "Medusa Dried Flower", price: 30000, img: "/images/dryflower/dry_flower_medusa.jpg", description: "Colorful curled stems.", benefits: ["Color burst", "Creative", "Twisted"] },
-      { id: "pikok", name: "Pikok", price: 30000, img: "/images/dryflower/dry_flower_pikok.jpg", description: "Dark tone dramatic dry flower.", benefits: ["Mystic", "Unique", "Accent"] },
-      { id: "rayung", name: "Rayung", price: 30000, img: "/images/dryflower/dry_flower_rampas_rayung.jpg", description: "Traditional rayung material.", benefits: ["Symbolic", "Minimal", "Rustic"] },
+      { id: "adas_wangi", name: "Adas Wangi", price: 50000, img: "/images/dryflower/dry_flower_adas_wangi.jpg", description: "Spiced fennel-like bouquet.", benefits: ["Scented", "Ethnic", "Boho"] },
+      { id: "alang_alang", name: "Alang-Alang", price: 35000, img: "/images/dryflower/dry_flower_alang_alang.jpg", description: "Tall grass inspired bunch.", benefits: ["Bold", "Statement", "Natural"] },
+      { id: "medusa", name: "Medusa Dried Flower", price: 40000, img: "/images/dryflower/dry_flower_medusa.jpg", description: "Colorful curled stems.", benefits: ["Color burst", "Creative", "Twisted"] },
+      { id: "pikok", name: "Pikok", price: 35000, img: "/images/dryflower/dry_flower_pikok.jpg", description: "Dark tone dramatic dry flower.", benefits: ["Mystic", "Unique", "Accent"] },
+      { id: "rayung", name: "Rayung", price: 35000, img: "/images/dryflower/dry_flower_rampas_rayung.jpg", description: "Traditional rayung material.", benefits: ["Symbolic", "Minimal", "Rustic"] },
       { id: "sataria_bulu", name: "Sataria Bulu", price: 30000, img: "/images/dryflower/dry_flower_sataria_bulu.jpg", description: "Fluffy cattail-like bouquet.", benefits: ["Soft", "Elegant", "Long-lasting"] }
     ]
   },
@@ -221,7 +221,7 @@ export const PRODUCTS = [
       {
         id: "rattan_full",
         name: "Full Rattan Basket",
-        price: 85000,
+        price: 260000,
         img: "/images/laundry/rattan_full_laundry_basket.jpg",
         description: "Tall cylindrical basket with natural rattan weave.",
         benefits: ["Eco-friendly", "Traditional craft", "Durable"]
@@ -229,7 +229,7 @@ export const PRODUCTS = [
       {
         id: "rattan_big_natural",
         name: "Big Natural Rattan Basket",
-        price: 90000,
+        price: 300000,
         img: "/images/laundry/rattan_big_natural_laundry_basket.jpg",
         description: "Spacious rattan basket ideal for large laundry loads.",
         benefits: ["Spacious", "Natural look", "Handwoven"]
@@ -237,7 +237,7 @@ export const PRODUCTS = [
       {
         id: "rattan_small",
         name: "Small Rattan Basket Set",
-        price: 80000,
+        price: 170000,
         img: "/images/laundry/rattan_small_laundry_basket.jpg",
         description: "Set of small laundry baskets with traditional weave.",
         benefits: ["Compact", "Set of 3", "Versatile use"]
@@ -245,7 +245,7 @@ export const PRODUCTS = [
       {
         id: "seagrass_banana",
         name: "Seagrass & Banana Basket",
-        price: 95000,
+        price: 200000,
         img: "/images/laundry/sea_grass_banana_laundry_basket.jpg",
         description: "Modern black & white design with seagrass-banana blend.",
         benefits: ["Stylish", "Strong fiber", "Modern ethnic"]
@@ -261,7 +261,7 @@ export const PRODUCTS = [
       {
         id: "placemat_enceng",
         name: "Enceng Placemats",
-        price: 35000,
+        price: 40000,
         img: "/images/placemats/placemate_enceng.jpg",
         description: "Handwoven placemats made from natural enceng.",
         benefits: ["Eco-friendly", "Handcrafted", "Elegant"]
@@ -269,7 +269,7 @@ export const PRODUCTS = [
       {
         id: "placemat_seagrass",
         name: "Seagrass Pink Set",
-        price: 40000,
+        price: 65000,
         img: "/images/placemats/placemate_seagrass_p_n.jpg",
         description: "Bright and beautiful pink-tone seagrass placemats.",
         benefits: ["Durable", "Colorful", "Natural materials"]
@@ -277,7 +277,7 @@ export const PRODUCTS = [
       {
         id: "placemat_water_hyacinth",
         name: "Water Hyacinth Placemat",
-        price: 37000,
+        price: 90000,
         img: "/images/placemats/placemate_water_hyacinth.jpg",
         description: "Circular woven placemat using water hyacinth.",
         benefits: ["Artisan crafted", "Smooth finish", "Sustainable"]
@@ -285,7 +285,7 @@ export const PRODUCTS = [
       {
         id: "placemat_zigzag_green",
         name: "Zigzag Green Placemat",
-        price: 42000,
+        price: 65000,
         img: "/images/placemats/r_placemat_en_zigzag.jpg",
         description: "Zigzag woven green placemat, perfect for earthy dining.",
         benefits: ["Contemporary", "Natural look", "Easy to clean"]
@@ -293,7 +293,7 @@ export const PRODUCTS = [
       {
         id: "placemat_zigzag_white",
         name: "Zigzag White Placemat",
-        price: 42000,
+        price: 65000,
         img: "/images/placemats/r_placemate_en_zigzag_hut.jpg",
         description: "Elegant zigzag design with white contrast.",
         benefits: ["Minimalist", "Woven texture", "Durable"]
@@ -301,7 +301,7 @@ export const PRODUCTS = [
       {
         id: "placemat_zigzag_black",
         name: "Zigzag Black Placemat",
-        price: 42000,
+        price: 65000,
         img: "/images/placemats/r_placemate_zigzag.jpg",
         description: "Modern black zigzag placemat for bold table setting.",
         benefits: ["Modern ethnic", "Handcrafted", "Statement piece"]
@@ -314,20 +314,99 @@ export const PRODUCTS = [
     name: "Souvenirs & Gifts",
     category: "Arts",
     variants: [
-      { id: "batik_fan", name: "Batik Fan", price: 30000, img: "/images/souvenirs/batik_fan_souvenirs.jpg", description: "Traditional batik hand fan.", benefits: ["Folds easily", "Cultural touch", "Wood frame"] },
+      { id: "batik_fan", name: "Batik Fan", price: 20000, img: "/images/souvenirs/batik_fan_souvenirs.jpg", description: "Traditional batik hand fan.", benefits: ["Folds easily", "Cultural touch", "Wood frame"] },
       { id: "pen_puppet", name: "Pen Puppet", price: 25000, img: "/images/souvenirs/batik_motif_pen_puppet_souvenirs.jpg", description: "Decorated pen with puppet head.", benefits: ["Unique gift", "Collectible", "Batik detail"] },
       { id: "pandan_pouch_mini", name: "Pandan Pouch Mini", price: 20000, img: "/images/souvenirs/batik_pandan_pouch_mini_souvenirs.jpg", description: "Mini pouch with pandan material.", benefits: ["Eco-friendly", "Ethnic", "Zippered"] },
-      { id: "pandan_wallet", name: "Pandan Wallet", price: 30000, img: "/images/souvenirs/batik_pandan_walletlarge_souvenirs.jpg", description: "Wallet with traditional pattern.", benefits: ["Functional", "Cultural", "Zippered"] },
-      { id: "tumblers", name: "Batik Tumbler", price: 60000, img: "/images/souvenirs/batik_tumler_souvenirs.jpg", description: "Batik-printed tumbler bottles.", benefits: ["Reusable", "Unique print", "Easy carry"] },
+      { id: "pandan_wallet", name: "Pandan Wallet", price: 55000, img: "/images/souvenirs/batik_pandan_walletlarge_souvenirs.jpg", description: "Wallet with traditional pattern.", benefits: ["Functional", "Cultural", "Zippered"] },
+      { id: "tumblers", name: "Batik Tumbler", price: 150000, img: "/images/souvenirs/batik_tumler_souvenirs.jpg", description: "Batik-printed tumbler bottles.", benefits: ["Reusable", "Unique print", "Easy carry"] },
       { id: "walet_souvenir", name: "Walet Gift Pack", price: 50000, img: "/images/souvenirs/batik_walet_souvenirs_gift.jpg", description: "Gift pack of assorted batik items.", benefits: ["Set item", "Traditional", "Colorful"] },
       { id: "coconut_bowl", name: "Coconut Bowl", price: 30000, img: "/images/souvenirs/coconut_bowl_set_souvenirs.jpg", description: "Mini bowl made of coconut shell.", benefits: ["Biodegradable", "Rustic", "Natural finish"] },
-      { id: "puppet_keychain", name: "Puppet Keychain", price: 20000, img: "/images/souvenirs/puppet_keychain.jpg", description: "Handcrafted wayang-style keychain.", benefits: ["Cute", "Cultural", "Lightweight"] },
-      { id: "book_divider", name: "Book Divider Puppet", price: 15000, img: "/images/souvenirs/unique_book_dividers_souvenirs_puppet_image.jpg", description: "Bookmark divider with puppet head.", benefits: ["Functional", "Bookmark gift", "Traditional"] },
+      { id: "puppet_keychain", name: "Puppet Keychain", price: 30000, img: "/images/souvenirs/puppet_keychain.jpg", description: "Handcrafted wayang-style keychain.", benefits: ["Cute", "Cultural", "Lightweight"] },
+      { id: "book_divider", name: "Book Divider Puppet", price: 20000, img: "/images/souvenirs/unique_book_dividers_souvenirs_puppet_image.jpg", description: "Bookmark divider with puppet head.", benefits: ["Functional", "Bookmark gift", "Traditional"] },
       { id: "fridge_magnet", name: "Wooden Batik Mask Magnet", price: 25000, img: "/images/souvenirs/wooden_batik_mask_fridge_magnet_souvenirs.jpg", description: "Mask shaped wood magnet with batik.", benefits: ["Strong magnet", "Handpainted", "Artistic"] },
-      { id: "coaster_round", name: "Round Coaster", price: 25000, img: "/images/souvenirs/wooden_coaster_batik_round.jpg", description: "Circular coaster with batik print.", benefits: ["Wooden base", "Absorbent", "Ethnic"] },
-      { id: "coasters_hex", name: "Hexagon Coasters", price: 25000, img: "/images/souvenirs/wooden_coasters_batik_souvenirs.jpg", description: "Hexagonal coaster pieces.", benefits: ["Unique shape", "Patterned", "Giftable"] },
-      { id: "cutlery_set", name: "Wooden Cutlery Set", price: 40000, img: "/images/souvenirs/wooden_cutlery_set_souvenirs.jpg", description: "Fork, spoon, and chopstick set.", benefits: ["Reusable", "Batik wrap", "Eco set"] }
+      { id: "coaster_round", name: "Round Coaster", price: 30000, img: "/images/souvenirs/wooden_coaster_batik_round.jpg", description: "Circular coaster with batik print.", benefits: ["Wooden base", "Absorbent", "Ethnic"] },
+      { id: "coasters_hex", name: "Hexagon Coasters", price: 45000, img: "/images/souvenirs/wooden_coasters_batik_souvenirs.jpg", description: "Hexagonal coaster pieces.", benefits: ["Unique shape", "Patterned", "Giftable"] },
+      { id: "cutlery_set", name: "Wooden Cutlery Set", price: 30000, img: "/images/souvenirs/wooden_cutlery_set_souvenirs.jpg", description: "Fork, spoon, and chopstick set.", benefits: ["Reusable", "Batik wrap", "Eco set"] }
     ]
-  }
+  },
+{
+  id: "herbal-drinks",
+  name: "Herbal Drinks",
+  category: "FnB",
+  variants: [
+    {
+      id: "fnb-1",
+      name: "Beras Kencur Madu",
+      img: "/images/FnB/an_beras_kencur_madu.jpg",
+      price: 55000,
+      description: "Traditional herbal tonic made with rice, galangal, and honey.",
+      benefits: ["Boosts energy", "Improves digestion"]
+    },
+    {
+      id: "fnb-2",
+      name: "Detoks Usus",
+      img: "/images/FnB/an_detoks_usus.jpg",
+      price: 55000,
+      description: "Natural detox mix for cleansing the digestive system.",
+      benefits: ["Cleanses colon", "Reduces bloating"]
+    },
+    {
+      id: "fnb-3",
+      name: "Kencur Jahe Jeruk",
+      img: "/images/FnB/an_kencur_jahe_jeruk.jpg",
+      price: 55000,
+      description: "Spicy and citrusy herbal drink for immunity and warmth.",
+      benefits: ["Boosts immunity", "Soothes throat"]
+    },
+    {
+      id: "fnb-4",
+      name: "Kunyit Asam Jawa Gula Aren",
+      img: "/images/FnB/an_kunyit_asam_jawa_gula_aren.jpg",
+      price: 55000,
+      description: "Refreshing blend of turmeric, tamarind, and palm sugar.",
+      benefits: ["Anti-inflammatory", "Detoxifying"]
+    },
+    {
+      id: "fnb-5",
+      name: "Wedang Uwuh",
+      img: "/images/FnB/an_wedang_uwuh.jpg",
+      price: 55000,
+      description: "Aromatic herbal mix of bark and leaves, known for warmth and wellness.",
+      benefits: ["Relieves fatigue", "Warms the body"]
+    }
+  ]
+},
+
+{
+  id: "beach-fabrics",
+  name: "Balinese Beach Fabrics",
+  category: "Fabrics",
+  variants: [
+    {
+      id: "fabric-1",
+      name: "Pink Balinese Beach Fabric",
+      img: "/images/fabrics/balines_beach_fabrik_p.jpg",
+      price: 65000,
+      description: "Hand-dyed pink Balinese beach fabric—light, airy and elegant.",
+      benefits: ["Perfect for sarong", "Great beach accessory"]
+    },
+    {
+      id: "fabric-2",
+      name: "Green Balinese Beach Fabric",
+      img: "/images/fabrics/balinese_beach_fabric_gpbo.jpg",
+      price: 65000,
+      description: "Lush green tone fabric ideal for beachwear and wraps.",
+      benefits: ["Breathable cotton", "Stylish tropical look"]
+    },
+    {
+      id: "fabric-3",
+      name: "Multicolor Flipper Print Fabric",
+      img: "/images/fabrics/baliness_beach_fabrik_flipper.jpg",
+      price: 65000,
+      description: "Vibrant collection of prints, perfect for summer flair.",
+      benefits: ["Unique batik prints", "Colorful collection"]
+    }
+  ]
+}
 
 ];

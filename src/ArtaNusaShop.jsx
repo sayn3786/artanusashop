@@ -155,6 +155,27 @@ export default function App() {
           );
         })}
       </main>
+
+  <footer className="mt-12 py-8 px-4 bg-[#FADFEF] text-center text-gray-800 shadow-inner rounded-t-lg">
+        <h3 className="text-xl font-bold mb-2">Thank you for visiting ÁRTA NUSA 🌸</h3>
+        <p className="text-sm max-w-xl mx-auto mb-4">
+          We’re passionate about preserving Indonesian craftsmanship and culture. 
+          Your purchase helps support local artisans and keep traditional art alive.
+        </p>
+        <div className="flex justify-center gap-6 mb-4 text-sm">
+          <a href="https://www.instagram.com/arta_nusa_?igsh=eWhhMXBzN2xsbjJy&utm_source=qr" target="_blank" rel="noopener noreferrer">
+            <img src="/images/icons/instagram.png" alt="Instagram" className="w-6 h-6 inline-block" />
+          </a>
+          <a href="mailto:arta.nusa17@gmail.com">
+            <img src="/images/icons/email.png" alt="Email" className="w-6 h-6 inline-block" />
+          </a>
+          <a href="https://www.facebook.com/share/1HiBDgKGWG/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">
+            <img src="/images/icons/facebook.png" alt="Facebook" className="w-6 h-6 inline-block" />
+          </a>
+        </div>
+        <p className="text-xs text-gray-500">&copy; {new Date().getFullYear()} ÁRTA NUSA. All rights reserved.</p>
+      </footer>
+
     </div>
   );
 }
