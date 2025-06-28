@@ -1,16 +1,15 @@
-// Updated Arta Nusa Shop with animated intro, variant support, and top-right cart display
+// Updated Arta Nusa Shop with animated intro, variant carousel, mobile compatibility, and top-right cart display
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { PRODUCTS } from "./products";
 
 export default function App() {
   const [items, setItems] = useState({});
-  const [selected, setSelected] = useState(null);
-  const [selectedVariant, setSelectedVariant] = useState(null);
   const [category, setCategory] = useState("All");
   const [country, setCountry] = useState("Singapore");
   const [rates, setRates] = useState({ SGD: 1, MYR: 3.1, IDR: 11500 });
   const [showCart, setShowCart] = useState(false);
+  const [variantIndexes, setVariantIndexes] = useState({});
 
   useEffect(() => {
     fetch("https://ipapi.co/json")
@@ -70,8 +69,8 @@ export default function App() {
   const filteredProducts = category === "All" ? PRODUCTS : PRODUCTS.filter(p => p.category === category);
 
   return (
-    <div className="min-h-screen bg-pink-50 text-gray-800 p-4 font-serif relative">
-      {/* Floating Cart */}
+    <div className="min-h-screen bg-[#FBEFF3] text-gray-800 p-4 font-serif relative">
+      {/* Cart UI */}
       <div className="fixed top-4 right-4 z-50">
         <button onClick={() => setShowCart(!showCart)} className="relative bg-white shadow-lg border border-amber-400 p-3 rounded-full hover:scale-105 transition-transform">
           🛒
@@ -106,14 +105,9 @@ export default function App() {
       </div>
 
       {/* Store Description */}
-      <motion.section
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1 }}
-        className="text-center py-8 px-6 bg-pink-100 rounded-lg shadow-md mb-6 relative"
-      >
-        <img src="/images/brand.jpg" alt="Arta Nusa Logo" className="absolute top-0.5 left-0.5 w-56 h-56 rounded-full object-contain shadow-md" />
-        <h2 className="text-2xl font-bold text-amber-800 mb-2">Welcome to Arta Nusa</h2>
+      <motion.section initial={{ opacity: 0, y: 50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1 }} className="text-center pt-40 sm:pt-8 px-6 bg-[#FADFEF] rounded-lg shadow-md mb-6 relative">
+        <img src="/images/brand.jpg" alt="Arta Nusa Logo" className="absolute top-2 left-2 w-36 h-36 sm:w-44 sm:h-44 rounded-full object-contain shadow-md" />
+        <h2 className="text-2xl font-bold text-accent mb-2">Welcome to Arta Nusa</h2>
         <p className="text-gray-700 text-md max-w-2xl mx-auto leading-relaxed">
           🌸 Arta Nusa celebrates the soulful craftsmanship of Indonesia. From handwoven rattan mirrors to traditional herbal teas,
           every item reflects our cultural roots. Whether you're shopping for home décor, artisan souvenirs, or natural treats—
@@ -122,9 +116,9 @@ export default function App() {
       </motion.section>
 
       <header className="text-center mb-6">
-        <div className="py-10 px-4 bg-pink-100 bg-opacity-70 rounded-lg shadow-md">
-          <h1 className="text-4xl font-bold text-amber-800 drop-shadow-md">Arta Nusa</h1>
-          <div className="mt-4 flex justify-center gap-4">
+        <div className="py-6 px-4 bg-[#FADFEF] rounded-lg shadow-md">
+          <h1 className="text-4xl font-bold text-accent">Arta Nusa</h1>
+          <div className="mt-4 flex flex-col sm:flex-row justify-center gap-4">
             <select value={category} onChange={(e) => setCategory(e.target.value)} className="px-3 py-1 border rounded bg-white text-black">
               {categories.map(c => <option key={c} value={c}>{c}</option>)}
             </select>
@@ -138,55 +132,29 @@ export default function App() {
       </header>
 
       <main className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
-        {filteredProducts.map((p, index) => (
-          <motion.div
-            key={p.id}
-            onClick={() => { setSelected(p); setSelectedVariant(p.variants[0]); }}
-            className="bg-white rounded shadow cursor-pointer hover:scale-105 transition-transform duration-300"
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: index * 0.05 }}
-          >
-            <img src={p.variants[0].img} alt={p.name} className="w-full h-60 object-contain p-4 rounded-t" />
-            <div className="p-4">
-              <h2 className="font-semibold text-lg">{p.name}</h2>
-              <p className="text-amber-600 font-bold">{toCurrency(p.variants[0].price, country)}</p>
-            </div>
-          </motion.div>
-        ))}
-      </main>
+        {filteredProducts.map((p, index) => {
+          const currentIndex = variantIndexes[p.id] || 0;
+          const setIndex = (newIndex) => setVariantIndexes(prev => ({ ...prev, [p.id]: newIndex }));
+          const variant = p.variants[currentIndex];
 
-      {selected && (
-        <div className="fixed inset-0 bg-black/40 flex items-center justify-center z-50" onClick={() => setSelected(null)}>
-          <div className="bg-white rounded-lg shadow-lg max-w-md w-full p-6 relative animate-fade-in" onClick={(e) => e.stopPropagation()}>
-            <img src={selectedVariant?.img || selected.variants[0].img} alt={selectedVariant?.name || selected.name} className="w-full h-60 object-contain rounded mb-4" />
-            <h2 className="text-xl font-bold">{selected.name}</h2>
-            <div className="my-2">
-              <select
-                value={selectedVariant?.id}
-                onChange={(e) => {
-                  const variant = selected.variants.find(v => v.id === e.target.value);
-                  setSelectedVariant(variant);
-                }}
-                className="w-full p-2 border rounded bg-gray-50"
-              >
-                {selected.variants.map(v => (
-                  <option key={v.id} value={v.id}>{v.name}</option>
-                ))}
-              </select>
-            </div>
-            <p className="text-amber-600 font-semibold mb-2">{toCurrency(selectedVariant?.price ?? selected.variants[0].price, country)}</p>
-            <p className="text-sm text-gray-600 mb-2">{selectedVariant?.description ?? selected.description}</p>
-            <ul className="list-disc ml-5 text-sm text-gray-700">
-              {(selectedVariant?.benefits ?? selected.benefits)?.map((b, i) => <li key={i}>{b}</li>)}
-            </ul>
-            <div className="mt-4 flex justify-end gap-2">
-              <button onClick={() => add(selectedVariant?.id)} className="bg-amber-500 text-white px-4 py-2 rounded">Add to Cart</button>
-              <button onClick={() => setSelected(null)} className="bg-gray-300 px-4 py-2 rounded">Close</button>
-            </div>
-          </div>
-        </div>
-      )}
+          const next = () => setIndex((currentIndex + 1) % p.variants.length);
+          const prev = () => setIndex((currentIndex - 1 + p.variants.length) % p.variants.length);
+
+          return (
+            <motion.div key={p.id} className="bg-white rounded shadow p-4 hover:scale-105 transition-transform duration-300" initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: index * 0.05 }}>
+              <img src={variant.img} alt={variant.name} className="w-full h-56 object-contain rounded mb-2" />
+              <h2 className="font-semibold text-lg mb-1">{p.name}</h2>
+              <p className="text-sm text-gray-600">{variant.name}</p>
+              <p className="text-amber-600 font-bold">{toCurrency(variant.price, country)}</p>
+              <div className="flex justify-between items-center mt-2">
+                <button onClick={prev} className="text-xs text-gray-600 hover:text-amber-600">← Prev</button>
+                <button onClick={() => add(variant.id)} className="bg-amber-500 text-white text-sm px-3 py-1 rounded">Add</button>
+                <button onClick={next} className="text-xs text-gray-600 hover:text-amber-600">Next →</button>
+              </div>
+            </motion.div>
+          );
+        })}
+      </main>
     </div>
   );
 }
