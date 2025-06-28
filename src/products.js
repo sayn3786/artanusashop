@@ -294,7 +294,7 @@ export const PRODUCTS = [
         id: "placemat_zigzag_white",
         name: "Zigzag White Placemat",
         price: 42000,
-        img: "/images/placemats/r_placemate_en_zigzag_put.jpg",
+        img: "/images/placemats/r_placemate_en_zigzag_hut.jpg",
         description: "Elegant zigzag design with white contrast.",
         benefits: ["Minimalist", "Woven texture", "Durable"]
       },
